@@ -6,24 +6,13 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: ci-demo
+name: Java CI with Maven
 
 on:
-  push:
-    branches: 
-
-JS
-on.push.branches :
-
-JSON
-{
-"on": {
-        "push": {
-                    "branches": 
-                    [ "main" ]
-                    }
-      }
-}
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
