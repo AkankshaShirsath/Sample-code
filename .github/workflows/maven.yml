@@ -9,10 +9,21 @@
 name: ci-demo
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  push:
+    branches: 
+
+JS
+on.push.branches :
+
+JSON
+{
+"on": {
+        "push": {
+                    "branches": 
+                    [ "main" ]
+                    }
+      }
+}
 
 jobs:
   build:
